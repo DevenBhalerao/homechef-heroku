@@ -32,7 +32,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
-app.use("/", express.static("front-end/build"));
+//app.use("/", express.static("front-end/build"));
 //
 if (process.env.NODE_ENV === "production") {
   app.use("/", express.static("front-end/build"));

@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "homechef backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd front-end && npm run build",
+    "install-client": "cd front-end && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm run install-client && npm run build",
+    "start": "node index.js",
+    "client": "cd front-end && npm start",
+    "dev": "concurrently -n 'index,client' \"nodemon index.js\" \"npm run client\""
+  },
+  "author": "vyankatesh",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "email-verification": "^0.4.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.14",
+    "node-geocoder": "^3.27.0",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.4",
+    "twilio": "^3.44.0",
+    "web-push": "^3.4.4"
+  }
+}

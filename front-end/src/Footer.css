@@ -1,0 +1,33 @@
+img{
+    border-radius: 50;
+}
+.FaInstagram {
+background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  border-radius: 25%;
+}
+.FaInstagram:hover {
+    box-shadow: 0px 5px 10px rgb(0,0,0); 
+  }
+
+.FaWhatsapp{    
+    background:
+    linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,
+    radial-gradient(#25d366 60%,transparent 0);
+    /* box-shadow: 0px 3px 3px rgba(0,0,0,.25);  */
+    border-radius:55px;
+    color: #FFF;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+.FaWhatsapp:hover {
+    box-shadow: 0px 5px 10px rgb(0,0,0); 
+}
+.FaFacebookSquare{
+    color: #3b5998;
+    background-color: #fff;
+    border-radius:20%;
+}
+.FaFacebookSquare:hover {
+    box-shadow: 0px 5px 10px rgb(0,0,0);  
+}

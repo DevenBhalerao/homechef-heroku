@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv").config();
+const path = require("path");
 
 const users = require("./apis/routes/users");
 const homechef = require("./apis/routes/homechef");
@@ -42,6 +43,9 @@ app.use("/admin", admin);
 //
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("front-end/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "front-end/build", "index.html"));
+  });
 }
 app.listen(PORT, (req, res) => {
   console.log(`server is running on port ${PORT}`);

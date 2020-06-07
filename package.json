@@ -29,5 +29,6 @@
     "nodemon": "^2.0.4",
     "twilio": "^3.44.0",
     "web-push": "^3.4.4"
-  }
+  },
+  "proxy":"https://homechef-mern.herokuapp.com"
 }

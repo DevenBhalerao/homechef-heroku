@@ -33,6 +33,14 @@ app.use(cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
+//
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("front-end/build"));
+  // app.get("*", (req, res) => {
+  //   res.sendFile(path.resolve(__dirname, "front-end/build", "index.html"));
+  // });
+}
+
 app.use("/users", users);
 app.use("/homechef", homechef);
 app.use("/menu", menu);
@@ -40,13 +48,6 @@ app.use("/order", order);
 app.use("/delivery", delivery);
 app.use("/admin", admin);
 
-//
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("front-end/build"));
-  app.get("*", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "front-end/build", "index.html"));
-  });
-}
 app.listen(PORT, (req, res) => {
   console.log(`server is running on port ${PORT}`);
 });

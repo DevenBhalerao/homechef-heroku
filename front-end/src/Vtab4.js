@@ -9,7 +9,7 @@ class Vtab4 extends Component {
     };
     
     componentDidMount() {
-        axios.get('/menu/Mexican')
+        axios.get('https://homechef-mern.herokuapp.com/menu/Mexican')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})

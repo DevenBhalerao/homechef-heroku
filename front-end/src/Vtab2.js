@@ -11,7 +11,7 @@ class Vtab2 extends Component {
     
     componentDidMount() {
         
-        axios.get('/menu/Chinese')
+        axios.get('https://homechef-mern.herokuapp.com/menu/Chinese')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})

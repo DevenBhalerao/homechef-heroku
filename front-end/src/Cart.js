@@ -7,7 +7,7 @@ class Cart extends Component {
   
     handle() {
         console.log("clicked");
-        axios.post('/order/add',
+        axios.post('https://homechef-mern.herokuapp.com/order/add',
         {
             "orderid": "forder55",
             "catogary": "Indian",

@@ -16,7 +16,7 @@ class Maps extends Component {
 
   handleClick() {
     console.log(localStorage.latitude);
-    axios.post('/users/updatelatlong',
+    axios.post('https://homechef-mern.herokuapp.com/users/updatelatlong',
           {
             longi: localStorage.latitude,
             lat: localStorage.longitude

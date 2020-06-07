@@ -15,7 +15,7 @@ class Orders extends Component {
 
     componentDidMount() {   
         
-        axios.get('/users/orders', {
+        axios.get('https://homechef-mern.herokuapp.com/users/orders', {
             headers: {
               'auth-token': localStorage.usertoken
             }})

@@ -17,13 +17,10 @@ class Vtab1 extends Component {
 
     componentDidMount() {
         
-        axios.get('http://localhost:5000/menu/Indian',)
+        axios.get('http://localhost:5000/menu/Indian')
          .then(res => {
              console.log(res)
              this.setState({items: res.data})
-         })
-         .catch(error => {
-             alert("Pls Login first");
          })
     }
     

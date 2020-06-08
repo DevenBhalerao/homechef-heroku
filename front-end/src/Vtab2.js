@@ -16,9 +16,6 @@ class Vtab2 extends Component {
              console.log(res)
              this.setState({items: res.data})
          })
-         .catch(error => {
-             console.log(error)
-         })
     }
     
     render() {

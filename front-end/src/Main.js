@@ -14,7 +14,6 @@ import Tab1 from './Tab1'
 import Tab3 from './Tab3'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Maps from './Maps'
-import Cart from './Cart'
 import Signup from './Signup'
 import Signin from './Signin'
 import Orders from './Orders'
@@ -111,7 +110,7 @@ class Main extends Component{
                     </TabPanel>
 
                     <TabPanel>
-                        <Cart />
+                    
                     </TabPanel>
 
                     <TabPanel>

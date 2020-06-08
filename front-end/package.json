@@ -2,6 +2,7 @@
   "name": "my",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -51,6 +52,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://homechef-mern.herokuapp.com"
+  }
+  
 }

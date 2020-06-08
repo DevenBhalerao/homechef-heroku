@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export const register = user => {
     return axios
-        .post('https://homechef-mern.herokuapp.com/users/register', {
+        .post('http://localhost:50/users/register', {
             username: user.username,
             phone: user.phone,
             email: user.email,
@@ -23,7 +23,7 @@ export const register = user => {
 
 export const login = user => {
     return axios
-        .post('https://homechef-mern.herokuapp.com/users/login', {
+        .post('http://localhost:5000/users/login', {
             username: user.username,
             password: user.password,
             status: user.status,

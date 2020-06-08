@@ -14,7 +14,7 @@ class Account extends Component {
 
     componentDidMount() {
         
-        axios.get('https://homechef-mern.herokuapp.com/users/profile', {
+        axios.get('http://localhost:5000/users/profile', {
             headers: {
               'auth-token': localStorage.usertoken
             }})
